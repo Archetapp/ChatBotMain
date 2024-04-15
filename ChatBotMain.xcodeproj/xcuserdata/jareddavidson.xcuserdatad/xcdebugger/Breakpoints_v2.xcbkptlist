@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "27F14655-B12E-498C-92BF-27B34441B41D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7951FBC9-060E-4511-8DED-C36444C0B5AC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChatBotMain/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getBotReply()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7951FBC9-060E-4511-8DED-C36444C0B5AC - 21676c2018743bfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;OpenAI.ChatResult, Swift.Error&gt;) -&gt; () in ChatBotMain.ChatController.getBotReply() -&gt; ()"
+                  moduleName = "ChatBotMain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jareddavidson/Documents/Projects/ChatBotMain/ChatBotMain/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41">
+               </Location>
+               <Location
+                  uuid = "7951FBC9-060E-4511-8DED-C36444C0B5AC - 21676c2018743bfb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Result&lt;OpenAI.ChatResult, Swift.Error&gt;) -&gt; () in ChatBotMain.ChatController.getBotReply() -&gt; ()"
+                  moduleName = "ChatBotMain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jareddavidson/Documents/Projects/ChatBotMain/ChatBotMain/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

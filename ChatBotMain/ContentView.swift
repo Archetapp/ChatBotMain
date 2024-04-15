@@ -11,7 +11,7 @@ import OpenAI
 class ChatController: ObservableObject {
     @Published var messages: [Message] = []
     
-    let openAI = OpenAI(apiToken: "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")
+    let openAI = OpenAI(apiToken: "")
     
     func sendNewMessage(content: String) {
         let userMessage = Message(content: content, isUser: true)
@@ -20,17 +20,22 @@ class ChatController: ObservableObject {
     }
     
     func getBotReply() {
-
-        openAI.chats(query: .init(model: .gpt3_5Turbo,
-                                  messages: self.messages.map({Chat(role: .user, content: $0.content)}))) { result in
+        let query = ChatQuery(
+            messages: self.messages.map({
+                .init(role: .user, content: $0.content)!
+            }),
+            model: .gpt3_5Turbo
+        )
+        
+        openAI.chats(query: query) { result in
             switch result {
             case .success(let success):
                 guard let choice = success.choices.first else {
                     return
                 }
-                let message = choice.message.content
+                guard let message = choice.message.content?.string else { return }
                 DispatchQueue.main.async {
-                    self.messages.append(Message(content: message ?? "", isUser: false))
+                    self.messages.append(Message(content: message, isUser: false))
                 }
             case .failure(let failure):
                 print(failure)
